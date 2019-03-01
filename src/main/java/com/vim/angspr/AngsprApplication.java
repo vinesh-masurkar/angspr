@@ -10,8 +10,8 @@ public class AngsprApplication {
 	//@Autowired
 	//UserRepository userRepository;
 
-	// SSH:   git@github.com:masurkarvinesh/angspr.git
-	// HTTPS: https://github.com/masurkarvinesh/angspr.git
+	// SSH:   git@github.com:masurkarvinesh/angspr.git 		>> 1J
+	// HTTPS: https://github.com/masurkarvinesh/angspr.git	>> 1J*
 	public static void main(String[] args) {
 		SpringApplication.run(AngsprApplication.class, args);
 	}
