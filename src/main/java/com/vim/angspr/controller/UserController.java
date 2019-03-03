@@ -9,13 +9,13 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 import lombok.Setter;
 
-//@RequestMapping("/user")
+@RequestMapping("/angspr")
 @RestController
 @Setter
 public class UserController {
 
-    @Autowired
-    UserService userService;
+    //@Autowired
+    //UserService userService;
 
 //    @RequestMapping(Constants.GET_USER_BY_ID)
 //    public UserDto getUserById(@PathVariable Integer userId) {

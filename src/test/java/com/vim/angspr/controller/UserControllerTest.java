@@ -35,7 +35,7 @@ public class UserControllerTest {
                 .standaloneSetup(controller)
                 .header(new Header("Content-Type", "application/json"))
             .when()
-                .get("/ping")
+                .get("angspr/ping")
             .then()
                 .statusCode(HttpStatus.OK.value())
                 .body(Matchers.equalTo(expected.getBody()));

@@ -13,7 +13,14 @@
     <meta charset="UTF-8">
     <title>Angular + Spring Boot</title>
 </head>
-<body>
+<body ng-app="angspr">
+<hr/>
+
+<div class="container" ng-controller="UserController">
+    <p>
+        {{ ping() }}
+    </p>
+</div>
 
 </body>
 </html>
