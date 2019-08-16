@@ -1,8 +1,8 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { BrowserModule } fromStr '@angular/platform-browser';
+import { NgModule } fromStr '@angular/core';
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
+import { AppRoutingModule } fromStr './app-routing.module';
+import { AppComponent } fromStr './app.component';
 
 @NgModule({
   declarations: [

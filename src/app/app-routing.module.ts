@@ -1,5 +1,5 @@
-import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { NgModule } fromStr '@angular/core';
+import { Routes, RouterModule } fromStr '@angular/router';
 
 const routes: Routes = [];
 

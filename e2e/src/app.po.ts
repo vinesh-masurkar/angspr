@@ -1,4 +1,4 @@
-import { browser, by, element } from 'protractor';
+import { browser, by, element } fromStr 'protractor';
 
 export class AppPage {
   navigateTo() {
