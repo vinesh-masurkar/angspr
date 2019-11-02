@@ -1,4 +1,4 @@
-package com.vim.angspr.util.query;
+package com.vim.angspr.util.query.temp;
 
 public class Condition {
   ExpressionComposite lOperand;

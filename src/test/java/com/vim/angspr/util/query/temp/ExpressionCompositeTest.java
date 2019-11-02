@@ -1,5 +1,7 @@
-package com.vim.angspr.util.query;
+package com.vim.angspr.util.query.temp;
 
+import com.vim.angspr.util.query.temp.ExpressionComposite;
+import com.vim.angspr.util.query.temp.Term;
 import org.junit.Before;
 import org.junit.Test;
 
