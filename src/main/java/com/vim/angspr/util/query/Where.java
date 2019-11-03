@@ -2,14 +2,20 @@ package com.vim.angspr.util.query;
 
 public class Where {
 
-  private Expression.Equals equals;
+  private Condition condition;
+  private Condition[] conditions;
 
   public static class builder {
 
-    private Expression.Equals equals;
+    private Condition[] conditions;
+    public builder conditions(Condition[] conditions) {
+      this.conditions = conditions;
+      return this;
+    }
 
-    public builder equals(Expression.Equals equals) {
-      this.equals = equals;
+    private Condition condition;
+    public builder equals(Expression.Equals condition) {
+      this.condition = condition;
       return this;
     }
 
@@ -19,11 +25,20 @@ public class Where {
   }
 
   private Where(builder bldr) {
-    this.equals = bldr.equals;
+    this.conditions = bldr.conditions;
+    this.condition = bldr.condition;
   }
 
   public String where(){
-    return this.equals.evaluate();
+    String whereEval = new String();
+    if(null != this.conditions && this.conditions.length > 0) {
+      for (Condition condition: conditions) {
+        whereEval += condition.evaluate();
+      }
+    } else if(null != this.condition) {
+      whereEval = this.condition.evaluate();
+    }
+    return whereEval;
   }
 
 }

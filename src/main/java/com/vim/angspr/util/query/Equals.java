@@ -1,8 +1,8 @@
 package com.vim.angspr.util.query;
 
-public class Equals extends TwoOperandExpression {
+public class Equals extends Condition {
 
   public Equals(String lhs, String rhs) {
-    super(Expression.Operator.EQUALS, lhs, rhs);
+    super(Operator.EQUALS, lhs, rhs);
   }
 }

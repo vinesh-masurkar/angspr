@@ -50,4 +50,22 @@ public class QueryHelperTest {
     assertEquals(expectedSelect, actualSelect);
   }
 
+  @Test
+  public void testBuildSelectWithWhereConditions() {
+    String expectedSelect = "SELECT A, B FROM T1, T2 WHERE C1 = 1 AND C2 > 3;";
+    Select select = Select.builder()
+      .select(new String [] {"A, B"})
+      .from(new String [] {"T1, T2"})
+      .where(new Where.builder()
+        .conditions(new Condition[] {
+          new Expression.Equals("C1", "1"),
+          new Expression.And(),
+          new Expression.LessThan("C2", "3")
+        })
+        .build())
+      .build();
+    String actualSelect = QueryHelper.buildSelectWithWhere(select);
+    assertEquals(expectedSelect, actualSelect);
+  }
+
 }
