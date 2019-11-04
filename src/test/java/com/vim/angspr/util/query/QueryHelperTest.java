@@ -38,7 +38,7 @@ public class QueryHelperTest {
 
   @Test
   public void testBuildSelectWithWhere() {
-    String expectedSelect = "SELECT A, B FROM T1, T2 WHERE C1 = 1;";
+    String expectedSelect = "SELECT A, B FROM T1, T2 WHERE (C1 = 1);";
     Select select = Select.builder()
       .select(new String [] {"A, B"})
       .from(new String [] {"T1, T2"})
@@ -52,7 +52,7 @@ public class QueryHelperTest {
 
   @Test
   public void testBuildSelectWithWhereConditions() {
-    String expectedSelect = "SELECT A, B FROM T1, T2 WHERE C1 = 1 AND C2 > 3;";
+    String expectedSelect = "SELECT A, B FROM T1, T2 WHERE ( (C1 = 1) AND (C2 > 3) );";
     Select select = Select.builder()
       .select(new String [] {"A, B"})
       .from(new String [] {"T1, T2"})

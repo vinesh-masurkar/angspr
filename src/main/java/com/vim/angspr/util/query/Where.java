@@ -32,9 +32,11 @@ public class Where {
   public String where(){
     String whereEval = new String();
     if(null != this.conditions && this.conditions.length > 0) {
+      whereEval += "( ";
       for (Condition condition: conditions) {
         whereEval += condition.evaluate();
       }
+      whereEval += " )";
     } else if(null != this.condition) {
       whereEval = this.condition.evaluate();
     }

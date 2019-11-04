@@ -4,28 +4,29 @@ public abstract class Condition {
 
   String lhs;
   String rhs;
-
   String[] vals;
 
   Operator operator;
   boolean hasValue;
 
-  Condition(Operator oper) {
+  private void initiate(Operator oper) {
     this.operator = oper;
     this.hasValue = true;
   }
 
+  Condition(Operator oper) {
+    initiate(oper);
+  }
+
   Condition(Operator oper, String[] vals) {
     this.vals = vals;
-    this.operator = oper;
-    this.hasValue = true;
+    initiate(oper);
   }
 
   Condition(Operator oper, String lhs, String rhs) {
     this.lhs = lhs;
     this.rhs = rhs;
-    this.operator = oper;
-    this.hasValue = true;
+    initiate(oper);
   }
 
   public String evaluate() {
@@ -45,12 +46,12 @@ public abstract class Condition {
         case GREATER_OR_EQUAL:
         case LESS_OR_EQUAL:
         case BETWEEN:
-          eval = this.lhs + this.operator.operator() + this.rhs;
+          eval = "(" + this.lhs + this.operator.operator() + this.rhs + ")";
           break;
 
         case LIKE:
         case IN:
-          eval = this.operator.operator() + "( " + String.join(",", vals) +" )";
+          eval = this.operator.operator() + "(" + String.join(",", vals) +")";
           break;
 
         default: break;
