@@ -12,6 +12,9 @@
 # dependencies
 /node_modules
 
+# database files
+h2.mv.db
+
 ### STS ###
 .apt_generated
 .classpath

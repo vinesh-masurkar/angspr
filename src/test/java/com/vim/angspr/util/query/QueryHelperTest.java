@@ -3,6 +3,8 @@ package com.vim.angspr.util.query;
 import org.junit.Before;
 import org.junit.Test;
 
+import static org.jooq.impl.DSL.*;
+
 import static org.junit.Assert.*;
 
 public class QueryHelperTest {
@@ -38,7 +40,7 @@ public class QueryHelperTest {
 
   @Test
   public void testBuildSelectWithWhere() {
-    String expectedSelect = "SELECT A, B FROM T1, T2 WHERE (C1 = 1);";
+    String expectedSelect = "SELECT A, B FROM T1, T2 WHERE C1 = 1;";
     Select select = Select.builder()
       .select(new String [] {"A, B"})
       .from(new String [] {"T1, T2"})
@@ -52,7 +54,7 @@ public class QueryHelperTest {
 
   @Test
   public void testBuildSelectWithWhereConditions() {
-    String expectedSelect = "SELECT A, B FROM T1, T2 WHERE ( (C1 = 1) AND (C2 > 3) );";
+    String expectedSelect = "SELECT A, B FROM T1, T2 WHERE ( C1 = 1 AND C2 > 3 );";
     Select select = Select.builder()
       .select(new String [] {"A, B"})
       .from(new String [] {"T1, T2"})
@@ -65,6 +67,16 @@ public class QueryHelperTest {
         .build())
       .build();
     String actualSelect = QueryHelper.buildSelectWithWhere(select);
+    assertEquals(expectedSelect, actualSelect);
+  }
+
+  @Test
+  public void testSelectWithJooq() {
+    String expectedSelect = "select * from T where C1 = 1";
+    String actualSelect = select(field("*"))
+      .from(table("T"))
+      .where(field("C1").equal(1))
+      .toString().replace("\n", " ");
     assertEquals(expectedSelect, actualSelect);
   }
 

@@ -46,7 +46,7 @@ public abstract class Condition {
         case GREATER_OR_EQUAL:
         case LESS_OR_EQUAL:
         case BETWEEN:
-          eval = "(" + this.lhs + this.operator.operator() + this.rhs + ")";
+          eval = this.lhs + this.operator.operator() + this.rhs;
           break;
 
         case LIKE:

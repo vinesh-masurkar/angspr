@@ -42,6 +42,11 @@ public class Expression {
     public Equals(String lhs, String rhs) {
       super(Operator.EQUALS, lhs, rhs);
     }
+
+//    public static Condition equals(String lhs, String rhs) {
+//      return new Equals(lhs, rhs);
+//    }
+
   }
 
   // NOT_EQUALS ("<>") : <String, String>
