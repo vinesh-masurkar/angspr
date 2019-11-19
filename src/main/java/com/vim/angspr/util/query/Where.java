@@ -19,6 +19,12 @@ public class Where {
       return this;
     }
 
+    //private Condition condition;
+    public builder equals(Equals condition) {
+      this.condition = condition;
+      return this;
+    }
+
     public Where build() {
       return new Where(this);
     }
