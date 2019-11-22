@@ -14,13 +14,7 @@ public class Where {
     }
 
     private Condition condition;
-    public builder equals(Expression.Equals condition) {
-      this.condition = condition;
-      return this;
-    }
-
-    //private Condition condition;
-    public builder equals(Equals condition) {
+    public builder equals(Condition condition) {
       this.condition = condition;
       return this;
     }
