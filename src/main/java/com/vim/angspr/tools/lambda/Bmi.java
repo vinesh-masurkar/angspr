@@ -2,6 +2,7 @@ package com.vim.angspr.tools.lambda;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.function.Function;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
@@ -112,5 +113,32 @@ public class Bmi {
 
     return result;
   }
+
+  final Function<String, Predicate<String>> startsWithLetter =
+    (String letter) -> {
+      Predicate<String> checkStarts = (String name) -> name.startsWith(letter);
+      return checkStarts;
+    };
+
+//  final Function<String, Predicate<Double>> funcUnder =
+//    (String under) -> {
+//      //final Predicate<Double> uPred = b -> val<=18.5;
+//      String result = Type.UNDER.type() -> val<=18.5;
+//      return result;
+//  };
+
+  public static String declarativeFunctionBmi(int lbs, int inches) {
+    Double val = calculateBmi(lbs, inches);
+    Map<Predicate<Double>, String> bmiMap = getBmiPredicateStringMap(val);
+
+    String result = bmiMap.entrySet().stream()
+      .filter(e -> e.getKey().test(val))
+      .map(e  -> {return e.getValue();})
+      .collect(Collectors.toList())
+      .get(0);
+
+    return result;
+  }
+
 
 }

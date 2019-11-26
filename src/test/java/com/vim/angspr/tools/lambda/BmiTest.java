@@ -7,37 +7,42 @@ import static org.junit.Assert.assertEquals;
 
 public class BmiTest {
   private int ht, wt;
-  private String actual;
+  private String expected;
 
   @Before
   public void setUp() throws Exception {
     ht = 5 * 12; wt = 150;
-    actual = Bmi.imperativeBmi(wt, ht);
+    expected = Bmi.imperativeBmi(wt, ht);
   }
 
   @Test
   public void imperativeBmi() {
-    assertEquals(Bmi.Type.OVER.type(), actual);
+    assertEquals(expected, Bmi.Type.OVER.type());
   }
 
   @Test
   public void declarativeIfElseBmi() {
-    assertEquals(Bmi.imperativeBmi(wt, ht), actual);
+    assertEquals(expected, Bmi.declarativeIfElseBmi(wt, ht));
   }
 
   @Test
   public void declarativeMapForBmi() {
-    assertEquals(Bmi.imperativeBmi(wt, ht), actual);
+    assertEquals(expected, Bmi.declarativeMapForBmi(wt, ht));
   }
 
   @Test
   public void declarativeStreamLambdaBmi() {
-    assertEquals(Bmi.imperativeBmi(wt, ht), actual);
+    assertEquals(expected, Bmi.declarativeStreamLambdaBmi(wt, ht));
   }
 
   @Test
   public void declarativeStreamLambdaCollectBmi() {
-    assertEquals(Bmi.imperativeBmi(wt, ht), actual);
+    assertEquals(expected, Bmi.declarativeStreamLambdaCollectBmi(wt, ht));
+  }
+
+  @Test
+  public void declarativeFunctionBmi() {
+    assertEquals(expected, Bmi.declarativeFunctionBmi(wt, ht));
   }
 
 }
