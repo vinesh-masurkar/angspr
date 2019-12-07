@@ -9,6 +9,7 @@ public class AngsprApplication {
 
 	//@Autowired
 	//UserRepository userRepository;
+  // git reset --hard
 
 	// SSH:   git@github.com:masurkarvinesh/angspr.git 		>> 1J
 	// HTTPS: https://github.com/masurkarvinesh/angspr.git	>> 1J*
