@@ -37,17 +37,15 @@ public class Expression {
     }
   }
 
-  // EQUALS ("=") : <String, String>
-  public static class Equals extends Condition {
-    public Equals(String lhs, String rhs) {
-      super(Operator.EQUALS, lhs, rhs);
-    }
-
+//  // EQUALS ("=") : <String, String>
+//  public static class Equals extends Condition {
+//    public Equals(String lhs, String rhs) {
+//      super(Operator.EQUALS, lhs, rhs);
+//    }
+//  }
 //    public static Condition equals(String lhs, String rhs) {
 //      return new Equals(lhs, rhs);
 //    }
-
-  }
 
   // NOT_EQUALS ("<>") : <String, String>
   public static class NotEquals extends Condition {
