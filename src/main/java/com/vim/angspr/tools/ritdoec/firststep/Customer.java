@@ -19,7 +19,7 @@ class Customer {
     return name;
   }
 
-  public String statement(Vector rentals) {
+  public String statement() {
     double totalAmount = 0;
     int frequentRenterPoints = 0;
     Enumeration rentalEnum = rentals.elements();

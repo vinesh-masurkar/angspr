@@ -3,6 +3,7 @@ package com.vim.angspr.repository;
 import com.vim.angspr.dto.TestData;
 import org.junit.Assert;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import static org.hamcrest.Matchers.equalTo;
@@ -16,6 +17,7 @@ public class H2DataRepositoryTest {
     repository = new H2DataRepository();
   }
 
+  @Ignore
   @Test
   public void testGetData() throws Exception {
     TestData expected = TestData.builder()

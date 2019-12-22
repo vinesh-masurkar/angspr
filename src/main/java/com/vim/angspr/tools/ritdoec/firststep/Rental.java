@@ -1,5 +1,8 @@
 package com.vim.angspr.tools.ritdoec.firststep;
 
+import lombok.Builder;
+
+@Builder
 class Rental {
   private Movie movie;
   private int daysRented;

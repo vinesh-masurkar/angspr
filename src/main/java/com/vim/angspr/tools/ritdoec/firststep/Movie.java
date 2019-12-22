@@ -1,9 +1,12 @@
 package com.vim.angspr.tools.ritdoec.firststep;
 
+import lombok.Builder;
+
+@Builder
 public class Movie {
-  public static final int CHILDRENS = 2;
   public static final int REGULAR = 0;
   public static final int NEW_RELEASE = 1;
+  public static final int CHILDRENS = 2;
   private String title;
   private int priceCode;
 

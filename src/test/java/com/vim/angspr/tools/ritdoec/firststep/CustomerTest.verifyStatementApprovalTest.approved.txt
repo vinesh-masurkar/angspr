@@ -1,0 +1,6 @@
+Rental Record for TestCustomer
+	Hamlet	2.0
+	As You Like It	12.0
+	Othello	6.0
+Amount owed is 20.0
+You earned 4 frequent renter points
