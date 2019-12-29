@@ -1,0 +1,12 @@
+[0] = Rental Record for customer1
+	Hamlet	2.0
+Amount owed is 2.0
+You earned 1 frequent renter points
+[1] = Rental Record for customer2
+	As You Like It	12.0
+Amount owed is 12.0
+You earned 2 frequent renter points
+[2] = Rental Record for customer3
+	Othello	6.0
+Amount owed is 6.0
+You earned 1 frequent renter points

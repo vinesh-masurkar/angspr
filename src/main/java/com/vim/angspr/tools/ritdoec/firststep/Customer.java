@@ -1,8 +1,13 @@
 package com.vim.angspr.tools.ritdoec.firststep;
 
+import lombok.Getter;
+import lombok.Setter;
+
 import java.util.Enumeration;
 import java.util.Vector;
 
+@Getter
+@Setter
 class Customer {
   private String name;
   private Vector rentals = new Vector();

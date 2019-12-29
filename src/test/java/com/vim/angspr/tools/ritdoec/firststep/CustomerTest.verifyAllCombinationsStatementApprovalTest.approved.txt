@@ -1,0 +1,108 @@
+[Hamlet, 0, 2] => Rental Record for customer1
+	Hamlet	2.0
+Amount owed is 2.0
+You earned 1 frequent renter points 
+[Hamlet, 0, 4] => Rental Record for customer1
+	Hamlet	5.0
+Amount owed is 5.0
+You earned 1 frequent renter points 
+[Hamlet, 0, 6] => Rental Record for customer1
+	Hamlet	8.0
+Amount owed is 8.0
+You earned 1 frequent renter points 
+[Hamlet, 1, 2] => Rental Record for customer1
+	Hamlet	6.0
+Amount owed is 6.0
+You earned 2 frequent renter points 
+[Hamlet, 1, 4] => Rental Record for customer1
+	Hamlet	12.0
+Amount owed is 12.0
+You earned 2 frequent renter points 
+[Hamlet, 1, 6] => Rental Record for customer1
+	Hamlet	18.0
+Amount owed is 18.0
+You earned 2 frequent renter points 
+[Hamlet, 2, 2] => Rental Record for customer1
+	Hamlet	1.5
+Amount owed is 1.5
+You earned 1 frequent renter points 
+[Hamlet, 2, 4] => Rental Record for customer1
+	Hamlet	3.0
+Amount owed is 3.0
+You earned 1 frequent renter points 
+[Hamlet, 2, 6] => Rental Record for customer1
+	Hamlet	6.0
+Amount owed is 6.0
+You earned 1 frequent renter points 
+[As You Like It, 0, 2] => Rental Record for customer1
+	As You Like It	2.0
+Amount owed is 2.0
+You earned 1 frequent renter points 
+[As You Like It, 0, 4] => Rental Record for customer1
+	As You Like It	5.0
+Amount owed is 5.0
+You earned 1 frequent renter points 
+[As You Like It, 0, 6] => Rental Record for customer1
+	As You Like It	8.0
+Amount owed is 8.0
+You earned 1 frequent renter points 
+[As You Like It, 1, 2] => Rental Record for customer1
+	As You Like It	6.0
+Amount owed is 6.0
+You earned 2 frequent renter points 
+[As You Like It, 1, 4] => Rental Record for customer1
+	As You Like It	12.0
+Amount owed is 12.0
+You earned 2 frequent renter points 
+[As You Like It, 1, 6] => Rental Record for customer1
+	As You Like It	18.0
+Amount owed is 18.0
+You earned 2 frequent renter points 
+[As You Like It, 2, 2] => Rental Record for customer1
+	As You Like It	1.5
+Amount owed is 1.5
+You earned 1 frequent renter points 
+[As You Like It, 2, 4] => Rental Record for customer1
+	As You Like It	3.0
+Amount owed is 3.0
+You earned 1 frequent renter points 
+[As You Like It, 2, 6] => Rental Record for customer1
+	As You Like It	6.0
+Amount owed is 6.0
+You earned 1 frequent renter points 
+[Othello, 0, 2] => Rental Record for customer1
+	Othello	2.0
+Amount owed is 2.0
+You earned 1 frequent renter points 
+[Othello, 0, 4] => Rental Record for customer1
+	Othello	5.0
+Amount owed is 5.0
+You earned 1 frequent renter points 
+[Othello, 0, 6] => Rental Record for customer1
+	Othello	8.0
+Amount owed is 8.0
+You earned 1 frequent renter points 
+[Othello, 1, 2] => Rental Record for customer1
+	Othello	6.0
+Amount owed is 6.0
+You earned 2 frequent renter points 
+[Othello, 1, 4] => Rental Record for customer1
+	Othello	12.0
+Amount owed is 12.0
+You earned 2 frequent renter points 
+[Othello, 1, 6] => Rental Record for customer1
+	Othello	18.0
+Amount owed is 18.0
+You earned 2 frequent renter points 
+[Othello, 2, 2] => Rental Record for customer1
+	Othello	1.5
+Amount owed is 1.5
+You earned 1 frequent renter points 
+[Othello, 2, 4] => Rental Record for customer1
+	Othello	3.0
+Amount owed is 3.0
+You earned 1 frequent renter points 
+[Othello, 2, 6] => Rental Record for customer1
+	Othello	6.0
+Amount owed is 6.0
+You earned 1 frequent renter points 
