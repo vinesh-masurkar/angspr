@@ -1,6 +1,6 @@
 package com.vim.angspr.tools.ritdoec.firststep;
 
-import static java.util.Arrays.asList;
+import java.util.Arrays;
 import static org.junit.Assert.*;
 
 import org.approvaltests.combinations.CombinationApprovals;
@@ -27,7 +27,7 @@ public class CustomerTest {
 
   @Test
   public void verifyAllStatementApprovalTest() {
-    Approvals.verifyAll("", asList(
+    Approvals.verifyAll("", Arrays.asList(
       buildTestCustomer(1, "Hamlet", 0, 2).statement(),
       buildTestCustomer(2, "As You Like It", 1, 4).statement(),
       buildTestCustomer(3, "Othello", 2, 6).statement()
@@ -48,7 +48,7 @@ public class CustomerTest {
     return testCustomer.statement();
   }
 
-  public void setUpExpected() {
+  private void setUpExpected() {
     expectedStatement = "Rental Record for TestCustomer\n" +
       "\tHamlet\t2.0\n" +
       "\tAs You Like It\t12.0\n" +
