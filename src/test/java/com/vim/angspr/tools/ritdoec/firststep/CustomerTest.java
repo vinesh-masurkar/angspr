@@ -43,6 +43,16 @@ public class CustomerTest {
     );
   }
 
+  @Test
+  public void verifySomeCombinationsStatementApprovalTest() {
+    CombinationApprovals.verifyAllCombinations(this::doTest,
+      new String [] {"Hamlet", "As You Like It", "Othello"},
+      new Integer[] {0, 1},
+      new Integer[] {2}
+    );
+  }
+
+
   private String doTest(final String title, final int priceCode, final int daysRented) {
     Customer testCustomer = buildTestCustomer(1, title, priceCode, daysRented);
     return testCustomer.statement();

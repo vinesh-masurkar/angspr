@@ -1,0 +1,24 @@
+[Hamlet, 0, 2] => Rental Record for customer1
+	Hamlet	2.0
+Amount owed is 2.0
+You earned 1 frequent renter points 
+[Hamlet, 1, 2] => Rental Record for customer1
+	Hamlet	6.0
+Amount owed is 6.0
+You earned 2 frequent renter points 
+[As You Like It, 0, 2] => Rental Record for customer1
+	As You Like It	2.0
+Amount owed is 2.0
+You earned 1 frequent renter points 
+[As You Like It, 1, 2] => Rental Record for customer1
+	As You Like It	6.0
+Amount owed is 6.0
+You earned 2 frequent renter points 
+[Othello, 0, 2] => Rental Record for customer1
+	Othello	2.0
+Amount owed is 2.0
+You earned 1 frequent renter points 
+[Othello, 1, 2] => Rental Record for customer1
+	Othello	6.0
+Amount owed is 6.0
+You earned 2 frequent renter points 
