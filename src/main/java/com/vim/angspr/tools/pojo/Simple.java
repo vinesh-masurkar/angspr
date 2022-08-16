@@ -3,7 +3,6 @@ package com.vim.angspr.tools.pojo;
 import com.vim.angspr.tools.pojo.utils.Boost;
 import lombok.*;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @Data

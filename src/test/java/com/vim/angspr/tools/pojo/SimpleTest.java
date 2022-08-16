@@ -1,6 +1,5 @@
 package com.vim.angspr.tools.pojo;
 
-import com.vim.angspr.tools.pojo.utils.Boost;
 import org.junit.Before;
 import org.junit.Test;
 
